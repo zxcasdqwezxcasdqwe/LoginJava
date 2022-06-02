@@ -101,7 +101,10 @@ public class Access extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnAcceptActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAcceptActionPerformed
-        JOptionPane.showMessageDialog(this, "Esto cerrará el sistema", "Salir de la app.", JOptionPane.QUESTION_MESSAGE);
+        String userName=this.txtUser.getText();
+        String userPass=String.valueOf(this.txtPassword.getPassword());
+        System.out.println(userName);  
+        System.out.println(userPass);    
     }//GEN-LAST:event_btnAcceptActionPerformed
 
     private void btnCancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelActionPerformed
