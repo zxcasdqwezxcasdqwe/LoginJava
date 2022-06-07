@@ -101,10 +101,13 @@ public class Access extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnAcceptActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAcceptActionPerformed
+        String realUserName="elva.Lazo";
+        String realPassword= "Macoy123";
         String userName=this.txtUser.getText();
         String userPass=String.valueOf(this.txtPassword.getPassword());
-        System.out.println(userName);  
-        System.out.println(userPass);    
+        if(userName.equals(realUserName)&&userPass.equals(realPassword)){
+            JOptionPane.showMessageDialog(this,"BIENVENIDO!","ACCESO",JOptionPane.INFORMATION_MESSAGE);
+        }else {JOptionPane.showMessageDialog(this,"Nombre de Usuario / Clave incorrectos","ACCESO",JOptionPane.ERROR_MESSAGE);}  
     }//GEN-LAST:event_btnAcceptActionPerformed
 
     private void btnCancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelActionPerformed
